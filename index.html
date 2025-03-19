@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+        <!-- Style -->
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Math Sprint Game</title>
+    </head>
+    <body>
+        <div class="game-container">
+            <header>
+                <h1>math sprint game</h1>
+            </header>
+
+            <!-- splash page -->
+            <div class="splash-page">
+                <div class="splash-page__questions">
+                    <!-- 10 questions -->
+                    <button class="question" data-value="10">
+                        <span class="question-label">10 questions</span>
+
+                        <div class="score-container">
+                            <span class="best-score-label">best score</span>
+                            <span class="best-score"></span>
+                        </div>
+                    </button>
+
+                    <!-- 20 questions -->
+                    <button class="question" data-value="20">
+                        <span class="question-label">20 questions</span>
+
+                        <div class="score-container">
+                            <span class="best-score-label">best score</span>
+                            <span class="best-score"></span>
+                        </div>
+                    </button>
+
+                    <!-- 30 questions -->
+                    <button class="question" data-value="30">
+                        <span class="question-label">30 questions</span>
+
+                        <div class="score-container">
+                            <span class="best-score-label">best score</span>
+                            <span class="best-score"></span>
+                        </div>
+                    </button>
+
+                    <!-- 40 questions -->
+                    <button class="question" data-value="40">
+                        <span class="question-label">40 questions</span>
+
+                        <div class="score-container">
+                            <span class="best-score-label">best score</span>
+                            <span class="best-score"></span>
+                        </div>
+                    </button>
+                </div>
+
+                <footer class="splash-page__footer">
+                    <button class="start-round">start round</button>
+                </footer>
+            </div>
+
+            <!-- counter page -->
+            <div class="counter-page hidden">
+                <span class="counter"></span>
+            </div>
+
+            <!-- game page -->
+            <div class="game-page hidden">
+                <div class="equation-selected"></div>
+                <div class="tmr">0.0s</div>
+
+                <div class="game-page__equations">
+                    <!-- <span class="equation">4 x 3 = 12</span> -->
+                </div>
+
+                <footer class="game-page__footer">
+                    <button
+                        class="game-page__btn game-page--wrong"
+                        data-option="false"
+                    >
+                        wrong
+                    </button>
+                    <button
+                        class="game-page__btn game-page--right"
+                        data-option="true"
+                    >
+                        right
+                    </button>
+                </footer>
+            </div>
+
+            <!-- score page -->
+            <div class="score-page hidden">
+                <div class="score-page__info">
+                    <h3 class="score-label">your score</h3>
+                    <span class="score">0.0s</span>
+                    <span class="score-base">base score: 0.0s</span>
+                    <span class="score-penalty">penalty: +0s</span>
+                </div>
+
+                <footer class="score-page__footer">
+                    <button class="play-again">play again</button>
+                </footer>
+            </div>
+        </div>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>
